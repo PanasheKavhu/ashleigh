@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A question for Ashleigh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page ask-page" data-reveal-delay="900">
+    <section class="ask">
+      <div id="message" class="message"></div>
+      <div id="final" class="final" hidden>
+        <div class="final-line" id="final-line">Ashleigh, my love will you be my Valentine</div>
+        <div class="buttons">
+          <button id="yes" class="yes">Yes</button>
+          <button id="no" class="no">No</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+  <!-- Yes confirmation modal -->
+  <div id="yes-modal" class="modal" hidden>
+    <div class="modal-panel">
+      <button class="modal-close" id="modal-close">✕</button>
+      <h3>Yay! 💖</h3>
+      <p>Share this moment:</p>
+      <div class="modal-actions">
+        <button id="copy-link">Copy link</button>
+        <button id="web-share">Share...</button>
+        <button id="tweet">Tweet</button>
+      </div>
+      <div id="modal-note" class="modal-note"></div>
+    </div>
+  </div>
+</body>
+</html>
